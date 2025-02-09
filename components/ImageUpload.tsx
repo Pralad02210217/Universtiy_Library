@@ -28,6 +28,7 @@ const authenticator = async () =>{
             signature
         }
     } catch (error: any) {
+        console.log(error)
         throw new Error(`Authentication request failed: ${error.message}`)
     }
 }
