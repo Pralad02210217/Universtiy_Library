@@ -1,6 +1,7 @@
 const config = {
     env: {
         apiEndpoint: process.env.NEXT_PUBLIC_API_ENDPOINT!,
+        prodApiEndpoint: process.env.NEXT_PUBLIC_PROD_API!,
         imageKit: {
             publicKey: process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY!,
             urlEndpoint: process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT!,
@@ -12,8 +13,8 @@ const config = {
             redisToken: process.env.UPSTASH_REDIS_TOKEN!,
             qstashUrl: process.env.QSTASH_URL!,
             qstashToken: process.env.QSTASH_TOKEN!
-
-        }
+        },
+        resentApi: process.env.RESEND_TOKEN!
     }
 }
 export default config;
