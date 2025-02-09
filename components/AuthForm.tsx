@@ -49,6 +49,7 @@ const AuthForm = <T extends FieldValues>({ type, schema, defaultValues, onSubmit
             })
             router.push('/')
         } else{
+            console.log(result.error)
             toast({
                 title: `Error ${isSignIn ? "signing in": "signing up"}`,
                 description: result.error ?? "An error occured.",
